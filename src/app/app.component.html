@@ -1,0 +1,31 @@
+<header>Trip Planner</header>
+<main class="text-center">
+        <div class="data-entry text-center">
+            <header id="form_header">Plan Your Trip</header>
+            <div class="form_field">
+                <div class="From"><input  [(ngModel)]="trip.sourceLocation" placeholder="From Location" (input)="bindData()"></div>
+                <div class="To"><input  [(ngModel)]="trip.destinationLocation" placeholder="To Location" (input)="bindData()"></div>
+                <div class="Stops"><input type="number" [(ngModel)]="trip.stops" placeholder="Number of stops"></div>
+                <button class="button" (click)="addTrip()">Add Trip!</button>
+            </div>
+        </div>
+    <p>Your Trip is from {{trip.sourceLocation}} to {{trip.destinationLocation}} with {{trip.stops}} Stops</p>
+    <table class="text-center search_trip">
+        <tr height="35px">
+            <th class="title text-center">From</th>
+            <th class="title text-center">To</th>
+            <th class="title text-center">Stops</th>
+        </tr>
+        <tr class="trip_lists" *ngFor="let eachtrip of tripDetails;let i = index">
+            <td class="inline"><input [(ngModel)]="eachtrip.sourceLocation" (input)="takeData(i,'sloc')"></td>
+            <td class="inline"><input [(ngModel)]="eachtrip.destinationLocation" (input)="takeData(i,'dest')"></td>
+            <td>
+                <button class="btn btn-lg btn-green" (click)="addRow(i)"><span class="glyphicon glyphicon-plus-sign"></span></button>
+            </td>
+            <td>
+                <button class="btn btn-lg btn-remove" (click)="removeRow(i)"><span class="glyphicon glyphicon-remove-sign"></span></button>
+            </td>
+        </tr>
+    </table>
+</main>
+

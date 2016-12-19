@@ -1,0 +1,90 @@
+.data-entry {
+    box-shadow: 0 0 12px #000;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.data-entry:hover {
+    box-shadow: 0 0 20px #000;
+}
+
+.data-entry section {
+    margin: 20px;
+    font-weight: 600;
+}
+
+p{
+    color: #7474bf;
+    margin-top: 20px;
+}
+
+.data-entry input {
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    padding: 10px;
+}
+
+.form {
+    padding-top: 20px;
+}
+
+#form_header {
+    margin-bottom: 40px;
+    font-size: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.form_field div {
+    padding-bottom: 15px;
+}
+
+.form_field button {
+    margin-top: 10px;
+}
+
+.search_trip {
+    width: 50%;
+    margin: 0px auto;
+    padding-top: 60px;
+}
+
+.search_trip tr:first-child {
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 6px 8px -6px #000, 0 -6px 8px -6px #000;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.search_trip tr {
+    height: 70px;
+}
+
+.trip_lists input {
+    border: none;
+    background: transparent;
+    text-align: center;
+    color: #464646;
+}
+
+.trip_lists input,
+button:focus {
+    outline: 0 !important;
+}
+
+.btn {
+    background: none;
+    color: #7474bf;
+}
+
+.btn-green:hover{
+    color: green;
+}
+
+.btn-remove:hover{
+    color: #DC143C;
+}
